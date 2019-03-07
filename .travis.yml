@@ -1,0 +1,14 @@
+language: node_js
+node_js: node
+cache:
+  directories:
+  - node_modules
+env:
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: cDL30vGylgvWvWrwkuNZcIHaCkAWAJKRnqt9hKomTxxY73mma2sjwNOgSdo58JtsptRQwZjT6Eb95lnnquuKTgczMDqsFZByS7a/89H3LYX+XK2AjXEMu76qG9x4vmiXimTr56B00NKNBFDDjscS9qxopBhnoeiDYszxVBDzNJ6zBUvOwRYgss4n4kQ/s62YkjOND8ZtRVps2VGp5nmfcSNt613UQxSvSQEyDlKcOstsq0H92v5sPV5Q+4EkaJRuBNIsjXkpVCsGECN8MruZPJX2n5GghmKIF9JH3/ucqWgaZQbnoIlS6WJ8w0xGh5Up5ZRv0oR4Z3ZkW2WoM2926rEEn8pGWM9oHJ6oVDAsh85lM3VwI4JYQ44Ww7/D6Oh6sKUSoGm7EelItu9pIJ5O4xVKva/AuZsBafT+7CHvHHC5XQHI/6teUkYpPieGtqH7snMsEpAo4/Pq3fO5L3YNy7Pcj5AdeecxIkUfzMvTYVrKIQOsTL8xHkBql5cM6a3YcPGOj/8TmdPJeFkzw/6vb4bDR55RfrIq9Zhsww6DJ5Y2vc9XYOwn7JX+hg/kpbfMdaBZGJoRbRNV9h3L/WQ/V52MhD4pt9ktHpyXG0l5n0m/xjxGtudeajhfKO+/PLIi45/QUkWvJp17FMyXhs5vX2kzQ19ita3yRDDtrLNi79U=
+  app: fast-basin-59484
+  on:
+    repo: KliCk5000/react-hot-cold-testing
